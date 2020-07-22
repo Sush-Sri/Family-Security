@@ -1,0 +1,1 @@
+import pyrebase config = { 'apiKey': "AIzaSyDYr4tMw5XPCh_NBltDqQ4DyuvsI", 'authDomain': "eons-2c748.firebaseapp.com", 'databaseURL': "https://eons-2c748.firebaseio.com", 'projectId': "eons-2c748", 'storageBucket': "eons-2c748.appspot.com", }firebase = pyrebase.initialize_app(config) db = firebase.database() while 1: db.child('Attendance/M1').set(input('enter the value'))
